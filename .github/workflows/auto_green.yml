@@ -1,0 +1,62 @@
+name: Stochastic Auto Green
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Probability Logic & Grass Planting
+        run: |
+          # Ensure tracking files exist (Creates them if they don't)
+          touch last_update.txt
+          touch last_decision.txt
+
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          CURRENT_HOUR=$(date +%H)
+          DAY_OF_WEEK=$(date +%u) 
+          
+          if grep -q "$CURRENT_DATE" last_decision.txt 2>/dev/null; then
+            echo "Decision already made for today. Skipping."
+            exit 0
+          fi
+
+          HOURS_LEFT=$((24 - 10#$CURRENT_HOUR))
+          TRIGGER_PICK=$((RANDOM % HOURS_LEFT))
+
+          if [ $TRIGGER_PICK -eq 0 ]; then
+            echo "$CURRENT_DATE" > last_decision.txt
+            
+            RANDOM_VAL=$((RANDOM % 100))
+            COMMIT_FLAG=false
+
+            if [ $DAY_OF_WEEK -le 5 ]; then
+              if [ $RANDOM_VAL -ge 5 ]; then COMMIT_FLAG=true; fi
+            else
+              if [ $RANDOM_VAL -ge 60 ]; then COMMIT_FLAG=true; fi
+            fi
+
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+
+            if [ "$COMMIT_FLAG" = true ]; then
+              echo "Planting grass! 🌿"
+              echo "Last contribution: $(date)" > last_update.txt
+              git add last_update.txt last_decision.txt
+              git commit -m "chore: contribution at $(date)"
+              git push
+            else
+              echo "Decided to rest today. 😴"
+              git add last_decision.txt
+              git commit -m "chore: daily rest cycle"
+              git push
+            fi
+          else
+            echo "Not this hour. Waiting..."
+          fi
