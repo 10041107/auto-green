@@ -64,9 +64,6 @@ If this project helped you, please consider buying me a coffee!
   <a href="https://buymeacoffee.com/10041107" target="_blank">
     <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
   </a>
-  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mufi1357@gmail.com&currency_code=USD" target="_blank">
-    <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
-  </a>
 </p>
 
 ---
