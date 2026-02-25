@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/10041107/auto-green?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/10041107/auto-green?style=flat-square" />
   <img src="https://img.shields.io/github/stars/10041107/auto-green?style=flat-square" />
-  <img src="https://img.shields.io/github/actions/workflow/status/10041107/auto-green/auto_green.yml?style=flat-square" />
+  <img src="https://img.shields.io/github/forks/10041107/auto-green?style=flat-square" />
 </p>
 
 <p align="center">
