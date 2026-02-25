@@ -1,4 +1,4 @@
-# 🌿 auto-green
+# 🌿 Stochastic Auto Green
 
 <div style="width: 100%; height: 140px; padding-bottom: 30px; overflow: hidden;">
   <img src="https://images.pexels.com/photos/61098/pexels-photo-61098.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="auto-green banner">
@@ -25,7 +25,10 @@ Fixed-time bots are predictable. **auto-green** mimics human irregularity using 
 * **Randomized Timing (24h)**: 24시간 중 어느 시점에 잔디가 심어질지 아무도 모릅니다. 
 * **Weighted Probabilities**: 요일에 따라 커밋 확률을 다르게 설정하여 실제 활동 패턴을 모사합니다.
 
----
+
+
+
+# 🌿 Stochastic Auto Green
 
 ### 📊 Probability Logic (잔디 심기 로직)
 
