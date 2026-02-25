@@ -1,4 +1,4 @@
-# 🌿 Stochastic Auto Green (v2)
+# 🌿 Stochastic Auto Green
 
 An intelligent, "human-like" GitHub contribution bot. It uses stochastic (probabilistic) logic to decide when to plant grass, ensuring your profile looks active but natural.
 
@@ -28,7 +28,7 @@ An intelligent, "human-like" GitHub contribution bot. It uses stochastic (probab
 
 ---
 ---
-# 🌿 Stochastic Auto Green (v2)
+# 🌿 Stochastic Auto Green
 
 "인간미 넘치는" GitHub 잔디 관리 봇입니다. 단순히 일정한 시간에 기계적으로 커밋하는 것이 아니라, 확률적(Stochastic) 로직을 사용하여 24시간 중 랜덤한 시간에 잔디를 심습니다.
 
