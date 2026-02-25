@@ -19,8 +19,8 @@
 
 ### 💡 Why auto-green?
 
+Fixed-time bots are predictable. **auto-green** mimics human irregularity using stochastic probability.  
 기계적으로 매일 같은 시간에 커밋하는 봇은 쉽게 들통납니다. **auto-green**은 "인간의 불규칙성"을 모방합니다.  
-Fixed-time bots are predictable. **auto-green** mimics human irregularity using stochastic probability.
 
 * **Randomized Timing (24h)**: 24시간 중 어느 시점에 잔디가 심어질지 아무도 모릅니다. 
 * **Weighted Probabilities**: 요일에 따라 커밋 확률을 다르게 설정하여 실제 활동 패턴을 모사합니다.
@@ -57,8 +57,9 @@ Fixed-time bots are predictable. **auto-green** mimics human irregularity using 
 
 ### ☕ Support & Donation
 
+
+If this project helped you, please consider buying me a coffee!  
 이 프로젝트가 마음에 드셨다면 별(⭐)을 눌러주시고, 개발자에게 따뜻한 커피 한 잔을 선물해 주세요!   
-If this project helped you, please consider buying me a coffee!
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mufi1357@gmail.com&currency_code=USD" target="_blank">
   <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
