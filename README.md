@@ -1,8 +1,8 @@
 # 🌿 Stochastic Auto Green
 
-<div style="width: 100%; height: 140px; padding-bottom: 30px; overflow: hidden;">
-  <img src="https://images.pexels.com/photos/61098/pexels-photo-61098.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="auto-green banner">
-</div>
+<p align="center">
+  <img src="https://images.weserv.nl/?url=https://images.pexels.com/photos/61098/pexels-photo-61098.jpeg&w=1200&h=300&fit=cover&a=center" width="100%" alt="auto-green banner">
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/10041107/auto-green?style=flat-square" />
