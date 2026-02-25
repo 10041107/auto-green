@@ -1,81 +1,75 @@
-# 🌿 Stochastic Auto Green (v2)
+# 🌿 auto-green
 
-An intelligent, "human-like" GitHub contribution bot. It uses stochastic (probabilistic) logic to decide when to plant grass, ensuring your profile looks active but natural.
+<div style="width: 100%; height: 140px; padding-bottom: 30px; overflow: hidden;">
+  <img src="https://images.pexels.com/photos/61098/pexels-photo-61098.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="auto-green banner">
+</div>
 
-## ✨ Features
-* **Auto-Initialization**: No need to manually create tracking files; the script handles it.
-* **Randomized Timing**: Picks a random hour daily to execute.
-* **Realistic Probabilities**:
-    * **Weekdays**: 95% Success Rate.
-    * **Weekends**: 40% Success Rate.
+<p align="center">
+  <img src="https://img.shields.io/github/license/10041107/auto-green?style=flat-square" />
+  <img src="https://img.shields.io/github/stars/10041107/auto-green?style=flat-square" />
+  <img src="https://img.shields.io/github/actions/workflow/status/10041107/auto-green/auto_green.yml?style=flat-square" />
+</p>
 
-## 🚀 How to Setup
-1.  Create a **Public** repository.
-2.  Create a file at `.github/workflows/auto_green.yml` and paste the code provided.
-3.  **Permissions**:
-    * Go to **Settings > Actions > General**.
-    * Change **Workflow permissions** to **Read and write permissions**.
-    * Click **Save**.
-
-## ⚖️ License
-**CC BY-NC 4.0 (Creative Commons Attribution-NonCommercial 4.0 International)**
-* **Non-Commercial**: Personal use only. No commercial exploitation.
-* **Attribution**: Give credit if you modify or redistribute.
-* **Derivatives**: You can modify the code for non-commercial purposes.
+<p align="center">
+  <b>An intelligent, human-like GitHub contribution bot.</b><br>
+  <i>확률적 로직을 기반으로 한 인간미 넘치는 자동 잔디 관리 봇</i>
+</p>
 
 ---
-*Maintained by GitHub Actions Bot*
+
+### 💡 Why auto-green?
+
+기계적으로 매일 같은 시간에 커밋하는 봇은 쉽게 들통납니다. **auto-green**은 "인간의 불규칙성"을 모방합니다.  
+Fixed-time bots are predictable. **auto-green** mimics human irregularity using stochastic probability.
+
+* **Randomized Timing (24h)**: 24시간 중 어느 시점에 잔디가 심어질지 아무도 모릅니다. 
+* **Weighted Probabilities**: 요일에 따라 커밋 확률을 다르게 설정하여 실제 활동 패턴을 모사합니다.
 
 ---
----
-# 🌿 Stochastic Auto Green (v2)
 
-"인간미 넘치는" GitHub 잔디 관리 봇입니다. 단순히 일정한 시간에 기계적으로 커밋하는 것이 아니라, 확률적(Stochastic) 로직을 사용하여 24시간 중 랜덤한 시간에 잔디를 심습니다.
+### 📊 Probability Logic (잔디 심기 로직)
 
-## ✨ 주요 기능
-
-* **자동 초기화**: 추적용 파일(`last_update.txt`, `last_decision.txt`)이 없어도 액션 실행 시 자동으로 생성합니다.
-* **랜덤 시간 트리거**: 매일 정해진 시간이 아닌, 24시간 중 무작위로 선정된 시간에 실행됩니다.
-* **요일별 확률 차등**:
-    * **평일 (월-금)**: 95% 확률로 잔디를 심습니다. (5%의 확률로 "가끔 쉬는 날")
-    * **주말 (토-일)**: 40% 확률로 잔디를 심습니다. (60%의 확률로 "푹 쉬는 주말")
-
-## 📊 잔디 심기 로직
-
-| 구분 | 성공 확률 | 비고 |
+| Day (요일) | Success Rate (확률) | Description (설명) |
 | :--- | :--- | :--- |
-| **평일** | **95%** | 성실한 개발자의 모습 |
-| **주말** | **40%** | 휴식과 자기계발의 조화 |
-| **시간** | **랜덤** | 24시간 중 1회 무작위 결정 |
-
-## 🚀 설정 방법
-
-1.  본 저장소를 **Public** 레퍼지토리로 생성합니다.
-2.  `.github/workflows/auto_green.yml` 경로에 제공된 액션 코드를 복사하여 넣습니다.
-3.  **권한 설정 (매우 중요)**:
-    * 저장소 상단 메뉴의 **Settings > Actions > General**로 이동합니다.
-    * 하단의 **Workflow permissions** 섹션에서 `Read and write permissions`를 선택합니다.
-    * **Save** 버튼을 눌러 저장합니다.
-
-## 🛠 커스터마이징
-
-확률을 직접 수정하고 싶다면 `.yml` 파일 내의 다음 수치를 변경하세요:
-* `if [ $RANDOM_VAL -ge 5 ]`: 평일 휴식 확률 (숫자가 높을수록 더 자주 쉽니다).
-* `if [ $RANDOM_VAL -ge 60 ]`: 주말 휴식 확률 (숫자가 낮을수록 주말에도 열일합니다).
-
-## ☕ 후원하기 (Support)
-
-이 프로젝트가 도움이 되셨다면, 개발자에게 커피 한 잔을 선물해 주세요! 여러분의 후원은 더 좋은 프로젝트를 만드는 데 큰 힘이 됩니다.
-
-- **PayPal**: [후원하기 (Donate via PayPal)](https://paypal.me/10041107)
-
-## ⚖️ 라이선스 (License)
-
-본 프로젝트는 **CC BY-NC 4.0 (Creative Commons Attribution-NonCommercial 4.0 International)** 라이선스를 따릅니다.
-
-* **비상업적 이용 전제**: 상업적인 목적으로 본 코드를 이용할 수 없습니다.
-* **출처 표기**: 2차 가공 및 재배포 시 반드시 원작자의 출처를 밝혀야 합니다.
-* **2차 가공 가능**: 비상업적 목적일 경우 자유롭게 수정하여 사용할 수 있습니다.
+| **Weekdays (평일)** | **95%** | 성실한 개발자의 모습 (Most days) |
+| **Weekends (주말)** | **40%** | 충분한 휴식을 즐기는 주말 (Relaxing) |
+| **Time (시간)** | **Random** | 24시간 중 무작위 1회 결정 (Stochastic) |
 
 ---
-*Generated by [GitHub Actions Bot](https://github.com/features/actions)*
+
+### 🚀 Quick Start (설정 방법)
+
+1.  **Repository Settings**:
+    * Go to `Settings > Actions > General`.
+    * Enable **Read and write permissions** under "Workflow permissions".
+    * 저장소 설정에서 쓰기 권한을 반드시 활성화하세요.
+2.  **Manual Trigger**:
+    * Go to the `Actions` tab, select `Stochastic Auto Green`, and click **Run workflow**.
+    * 액션 탭에서 워크플로우를 수동으로 한 번 실행해 보세요.
+3.  **Automatic Operation**:
+    * Everything is set! Tracking files (`last_update.txt`, `last_decision.txt`) will be created automatically.
+    * 모든 준비가 끝났습니다. 추적용 파일은 첫 실행 시 자동으로 생성됩니다.
+
+---
+
+### ☕ Support & Donation
+
+이 프로젝트가 마음에 드셨다면 별(⭐)을 눌러주시고, 개발자에게 따뜻한 커피 한 잔을 선물해 주세요!   
+If this project helped you, please consider buying me a coffee!
+
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mufi1357@gmail.com&currency_code=USD" target="_blank">
+  <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
+</a>
+
+---
+
+### ⚖️ License
+
+**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
+
+* **Non-Commercial**: 비상업적 용도로만 사용 가능합니다.
+* **Attribution**: 2차 가공 및 재배포 시 반드시 원작자(**@10041107**)의 출처를 밝혀야 합니다.
+* **Modification**: 비상업적 목적의 자유로운 수정을 허용합니다.
+
+---
+<p align="right">Maintained with ❤️ by <a href="https://github.com/10041107">10041107</a></p>
