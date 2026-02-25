@@ -55,15 +55,19 @@ Fixed-time bots are predictable. **auto-green** mimics human irregularity using 
 
 ---
 
-### ☕ Support & Donation
+## ☕ Support & Donation
 
+이 프로젝트가 마음에 드셨다면 별(⭐)을 눌러주시고, 개발자에게 따뜻한 커피 한 잔을 선물해 주세요!  
+If this project helped you, please consider buying me a coffee!
 
-If this project helped you, please consider buying me a coffee!  
-이 프로젝트가 마음에 드셨다면 별(⭐)을 눌러주시고, 개발자에게 따뜻한 커피 한 잔을 선물해 주세요!   
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mufi1357@gmail.com&currency_code=USD" target="_blank">
-  <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
-</a>
+<p align="left">
+  <a href="https://buymeacoffee.com/10041107" target="_blank">
+    <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
+  </a>
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mufi1357@gmail.com&currency_code=USD" target="_blank">
+    <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
+  </a>
+</p>
 
 ---
 
