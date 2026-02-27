@@ -46,8 +46,8 @@ jobs:
               TARGET_HOUR=$(echo $DECISION_DATA | cut -d ' ' -f 2)
 
               if [ "$TARGET_HOUR" != "SKIP" ] && [ $((10#$CURRENT_HOUR)) -eq $((10#$TARGET_HOUR)) ]; then
-                git config --local user.email "aksmfdyfl111@gmail.com"
-                git config --local user.name "OscarWilde"
+                git config --local user.email "본인의_깃허브_이메일@example.com"
+                git config --local user.name "본인의_깃허브_유저네임"
                 
                 echo "Planting grass at target hour: $TARGET_HOUR 🌿"
                 echo "Last contribution: $(date)" > last_update.txt
